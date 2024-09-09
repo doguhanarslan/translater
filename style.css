@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #121415;
+}
+.container {
+    width: 900px;
+    background: #181A1B;
+    border-radius: 40px;
+    padding: 20px;
+}
+#from-lang{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    background-color: #181A1B;
+}
+#to-lang{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    border:none;
+    background-color: #181A1B;
+}
+.box {
+    border-radius: 20px;
+}
+
+.controls, .controls li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls .icons i{
+    width: 40px;
+    color: grey;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.controls .icons{
+    width: 35%;
+}
+
+ul {
+    list-style: none;
+    padding: 12px 15px;
+}
+
+.text-controls textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 15px;
+    resize: none;
+}
+
+.text-controls .from-text{
+    color: grey;
+    border-top: 3px solid #b80000;
+    border-right:0.1mm solid #b80000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0mm;
+}
+.exchange{
+    cursor: pointer;
+}
+.text-controls .to-text {
+    color: grey;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top: 3px solid #b80000;
+}
+
+.box .text-controls {
+    display: flex;
+}
+
+button {
+    background-color: #121415;
+    border: none;
+    color: grey;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 18px;
+    transition-duration: .4s;
+    border: 2px solid #393939;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b80000;
+    color: white;
+    border: 2px solid #b80000;
+}
